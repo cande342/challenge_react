@@ -1,11 +1,11 @@
-# 🚀 Mi Postulación - Frontend Challenge
+# Mi Postulación - Frontend Challenge
 
 Este proyecto fue inicializado con [Vite](https://vitejs.dev/) y está configurado con las últimas herramientas del ecosistema de React para garantizar un desarrollo rápido y un rendimiento óptimo en producción.
 
 ## 🛠️ Stack Tecnológico
 
 * **Librería UI:** React (con React Compiler habilitado para optimización automática)
-* **Lenguaje:** TypeScript 💙
+* **Lenguaje:** TypeScript 
 * **Estilos:** Tailwind CSS v4
 * **Entorno / Build:** Vite + SWC
 
@@ -23,13 +23,15 @@ Este proyecto está construido estrictamente con **TypeScript** en lugar de Java
 
 ## 📂 Estructura del Proyecto
 
-El código fuente principal se encuentra dentro del directorio `src/`, organizado de la siguiente manera:
+El código fuente se organiza siguiendo principios de separación de responsabilidades:
 
-* `📁 components/` ➜ Componentes de interfaz reutilizables (botones, tarjetas, modales).
-* `📁 pages/` ➜ Las vistas o pantallas principales de la aplicación.
-* `📁 utils/` ➜ Funciones auxiliares, formateadores de datos y lógica reutilizable.
+* `📁 src/components/` ➜ Componentes generales y de UI atómicos y modulares (Button, Input, Card).
+* `📁 src/hooks/` ➜ Custom Hooks para encapsular la lógica de estado y llamadas a la API.
+* `📁 src/services/` ➜ Capa de abstracción de red (fetchAPI y peticiones específicas).
+* `📁 src/pages/` ➜ Vistas principales que orquestan la lógica de los hooks y componentes.
+* `📁 src/types/` ➜ Definiciones de interfaces de TypeScript para contratos de API.
 
----
+
 
 ## 💻 Instalación y Uso Local
 
