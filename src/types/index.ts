@@ -17,6 +17,7 @@ export interface ApplyPayload {
   jobId: string;
   candidateId: string;
   repoUrl: string;
+  applicationId: string;
 }
 
 export interface ApplyResponse {
