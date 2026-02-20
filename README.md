@@ -1,75 +1,41 @@
-# React + TypeScript + Vite
+# 🚀 Mi Postulación - Frontend Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto fue inicializado con [Vite](https://vitejs.dev/) y está configurado con las últimas herramientas del ecosistema de React para garantizar un desarrollo rápido y un rendimiento óptimo en producción.
 
-Currently, two official plugins are available:
+## 🛠️ Stack Tecnológico
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Librería UI:** React (con React Compiler habilitado para optimización automática)
+* **Lenguaje:** TypeScript 💙
+* **Estilos:** Tailwind CSS v4
+* **Entorno / Build:** Vite + SWC
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 📘 Por qué elegimos TypeScript
 
-Note: This will impact Vite dev & build performances.
+Este proyecto está construido estrictamente con **TypeScript** en lugar de JavaScript puro por las siguientes ventajas clave:
 
-## Expanding the ESLint configuration
+* **Prevención de errores:** Detecta bugs en tiempo de desarrollo (antes de compilar o llegar al navegador), evitando los clásicos errores de "undefined is not an object".
+* **Experiencia de Desarrollo (DX):** Mejora drásticamente el autocompletado en el editor (IntelliSense). Al tipear, Visual Studio Code sabe exactamente qué propiedades necesita cada componente.
+* **Código auto-documentado:** Al definir `Interfaces` y `Types` para los *props* y las respuestas de las APIs, el código es mucho más fácil de leer y mantener para cualquier otro desarrollador que revise la prueba.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📂 Estructura del Proyecto
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+El código fuente principal se encuentra dentro del directorio `src/`, organizado de la siguiente manera:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* `📁 components/` ➜ Componentes de interfaz reutilizables (botones, tarjetas, modales).
+* `📁 pages/` ➜ Las vistas o pantallas principales de la aplicación.
+* `📁 utils/` ➜ Funciones auxiliares, formateadores de datos y lógica reutilizable.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 💻 Instalación y Uso Local
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Para correr este proyecto en tu computadora local, seguí estos pasos:
+
+1. Cloná este repositorio.
+2. Abrí la terminal en la carpeta del proyecto e instalá las dependencias:
+   ```bash
+   npm install
